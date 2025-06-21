@@ -1,0 +1,62 @@
+Reddit DM Outreach Bot
+
+This is an automated Reddit DM outreach tool built in Python. It scrapes users from a given subreddit and sends each one a custom or randomized message via Reddit’s web interface using Selenium and undetected-chromedriver. You can run it locally or upload it to Replit for 24/7 cloud operation.
+
+Features
+
+✔ Scrapes recent users from subreddit threads
+✔ Sends DMs with randomized messages
+✔ Skips duplicates using a sent_log.csv file
+✔ Works with headless Chrome for stealth
+✔ Easy config via config.json
+✔ Deployable to Replit for free hosting
+
+Setup Instructions
+
+Clone this repo or upload to Replit
+Create a config.json file with:
+{
+  "subreddits": ["forhire", "slavelabour", "freelance"],
+  "max_users": 30,
+  "messages": [
+    "Hey! Saw your post — let’s connect.",
+    "Quick question about your Reddit post.",
+    "What you shared caught my attention. You open to chat?"
+  ]
+}
+Create a Reddit App for authentication:
+Go to https://www.reddit.com/prefs/apps
+Click "create another app" at the bottom
+Name it anything, set it as "script"
+Redirect URI: http://localhost:8080
+Copy your client ID and secret
+Create a .env file with:
+REDDIT_CLIENT_ID=your_id_here
+REDDIT_CLIENT_SECRET=your_secret_here
+REDDIT_USERNAME=your_username
+REDDIT_PASSWORD=your_password
+REDDIT_USER_AGENT=bot by /u/your_username
+Install requirements:
+pip install -r requirements.txt
+If using Replit, paste this into the Replit shell.
+
+Run the bot:
+python main.py
+The bot will open a browser, log in, and begin sending DMs to scraped users.
+
+Notes
+
+– You must log in manually if Reddit blocks automated login.
+– Respect Reddit’s rate limits and message fewer than 100 users per day to avoid bans.
+– All messaged usernames are saved in sent_log.csv to prevent re-sending.
+
+Deploy on Replit
+
+To run 24/7:
+
+Upload all files to a new Replit project
+Add your environment variables to the Replit secrets manager
+Set main.py as your entry file
+Use UptimeRobot or a Flask keep-alive server to prevent sleeping
+This lets your bot stay live and message while you sleep.
+
