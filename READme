@@ -24,7 +24,7 @@ Create a config.json file with:
     "What you shared caught my attention. You open to chat?"
   ]
 }
-Create a Reddit App for authentication:
+Create a Reddit App for authentication: 
 Go to https://www.reddit.com/prefs/apps
 Click "create another app" at the bottom
 Name it anything, set it as "script"
