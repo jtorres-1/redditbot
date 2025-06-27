@@ -1,6 +1,7 @@
 {
   "build": {
-    "builder": "raw"
+    "env": {},
+    "command": ""
   },
   "deploy": {
     "startCommand": "bash start.sh"
