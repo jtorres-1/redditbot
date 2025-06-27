@@ -27,7 +27,10 @@ SUBREDDITS = [
     'jobhunting', 'learnprogramming', 'cscareerquestionsEU', 'jobsearch',
     'jobhuntingEU', 'jobsearchEU', 'jobsearchCA', 'jobsearchAU', 'jobsearchNZ',
     'jobsearchUK', 'jobsearchNZ', 'jobsearchIE', 'jobsearchSG', 'jobsearchIN',
-    'jobsearchPH', 'jobsearchMY', 'jobsearchHK', 'jobsearchTW', 'interviews'
+    'jobsearchPH', 'jobsearchMY', 'jobsearchHK', 'jobsearchTW', 'interviews',
+    'csMajors', 'EngineeringResumes', 'RemoteWork', 'RemoteWorkJobs',
+    'RemoteWorkHiring', 'RemoteWorkJobs', 'RemoteWorkHiring', 'RemoteWorkJobs',
+    'RemoteWorkHiring', 'RemoteWorkJobs', 'RemoteWorkHiring'
 ]
 
 KEYWORDS = [
@@ -37,14 +40,17 @@ KEYWORDS = [
 ]
 
 DM_MESSAGES = [
-    "Yo I built a bot that applies to 50+ jobs/day. Made sales. Try it 👉 https://linktr.ee/jtxcode",
-    "Auto applies to jobs while I sleep. Real results. Check it 👉 https://linktr.ee/jtxcode",
+    "I was broke, tired, and wasting time sending apps manually. I built this bot to apply for me. Now it runs 24/7 and I’m getting sales too. Try it 👉 https://linktr.ee/jtxcode",
+    "I was getting ghosted on every app. This bot finally got me replies. It applies to 50+ jobs a day while I sleep. No setup headaches. 👉 https://linktr.ee/jtxcode",
     "Built a job hunter bot. Gets interviews. Simple setup. Demo: https://linktr.ee/jtxcode",
-    "I was tired of getting ghosted. This bot finally got me replies 🔥 https://linktr.ee/jtxcode",
-    "Applying manually? Don’t. This bot does it for you. No BS 👉 https://linktr.ee/jtxcode",
+    "Not gonna lie… this bot changed everything. I built it out of desperation. It’s making me money and getting users interviews now. 👉 https://linktr.ee/jtxcode",
+    "Wasting hours applying to jobs? I was too. Built this to do it for me — now I wake up to interviews. Try it → https://linktr.ee/jtxcode",
     "Yo I got tired of applying to jobs every damn day. Built this bot → https://linktr.ee/jtxcode. It literally got me interviews in 48 hrs.",
-    "Dead serious — this AI bot helped me go from 0 to interviews while I was sleeping. Setup took 3 mins. https://linktr.ee/jtxcode",
-    "Don’t waste time applying manually — this changed everything. Try it → https://linktr.ee/jtxcode"
+    "If you’re job hunting and getting nowhere, I feel you. This bot helped me actually get responses. It runs while you sleep. 👉 https://linktr.ee/jtxcode",
+    "Don’t waste time applying manually — this changed everything. Try it → https://linktr.ee/jtxcode",
+    "Been using this job bot for a week. Already got callbacks. No tech skills needed — plug in your resume and go. https://linktr.ee/jtxcode",
+    "Built this bot for myself when I was desperate. It worked. Now I’m sharing it. If you’re job hunting, use it. https://linktr.ee/jtxcode",
+    "I know how it feels to waste time applying and hear nothing back. This changed that for me. Give it a shot → https://linktr.ee/jtxcode"
 ]
 
 # === PRAW SETUP ===
@@ -114,3 +120,4 @@ while True:
                         time.sleep(10)
         time.sleep(10)
     time.sleep(180)
+
