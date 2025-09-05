@@ -1,0 +1,29 @@
+# ResumAide Reddit Outreach Bot
+
+This is a Node.js bot that automates Reddit DM outreach to promote [ResumAide](https://linktr.ee/jtxcode).  
+It scrapes targeted subreddits where job seekers hang out and sends them value-first messages with a link to ResumAide.
+
+## Features
+- Scrapes recent posts from job/career subreddits
+- Sends randomized outreach DMs
+- Avoids duplicates by tracking messaged users in `messaged_users.json`
+- Random delays & sub shuffle to reduce ban risk
+- Configurable max DMs per day
+
+## Setup
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/jtorres-1/redditbot.git
+   cd redditbot
+
+npm install
+
+create .env file USER_AGENT=your_user_agent
+REDDIT_CLIENT_ID=your_client_id
+REDDIT_CLIENT_SECRET=your_client_secret
+REDDIT_USERNAME=your_username
+REDDIT_PASSWORD=your_password
+
+
+run bot 
+node index.js
